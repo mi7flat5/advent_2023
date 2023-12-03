@@ -1,8 +1,8 @@
 from read_data import get_input
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    finput = get_input(1,1)
+import os
 
+if __name__ == '__main__':
+    finput = get_input(int(os.path.basename(__file__).split('.')[0].replace('day','')),1)
 
     def do_sum(local_input):
         sum = 0
