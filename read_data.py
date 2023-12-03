@@ -1,8 +1,8 @@
-import os
+
 def get_input(day,part):
     input_lines = []
     f = open("data/advent_{}_{}.txt".format(day,part), "r")
     for line in f:
-        input_lines.append(line)
+        input_lines.append(line.replace('\n',''))
     return input_lines
 
